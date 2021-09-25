@@ -1,0 +1,30 @@
+{
+  "name": "anchorchart",
+  "version": "1.0.0",
+  "description": "Project Idea: Anchor Chart Ecommerce Website 1.\tLogin Function a.\tEmail b.\tPassword 2.\tRegister New user (Teyon) a.\tFirst Name b.\tLast Name c.\tEmail d.\tPassword e.\tStreet f.\tCity  g.\tState h.\tZip code 3.\tProduct Database (Gabriel) a.\tPicture b.\tSubject c.\tGrade d.\tSub topic e.\tPrice 4.\tFront End (Mike) a.\tCards for product b.\tCart c.\tLogin Form d.\tProduct Adding Form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeyonP/FullStackProject-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeyonP/FullStackProject-/issues"
+  },
+  "homepage": "https://github.com/TeyonP/FullStackProject-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13",
+    "sequelize-cli": "^6.2.0"
+  }
+}
