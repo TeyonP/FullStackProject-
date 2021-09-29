@@ -1,0 +1,25 @@
+#form-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 760px) {
+  #form-container {
+    flex-direction: column;
+  }
+  #login-form,
+  #registration-form {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
+.company-title {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50px;
+  font-size: 40px;
+  font-family: monospace;
+  color: #a8dadc;
+}
