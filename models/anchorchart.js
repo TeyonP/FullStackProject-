@@ -21,7 +21,8 @@ module.exports = (sequelize, DataTypes) => {
     price: DataTypes.DECIMAL
   }, {
     sequelize,
-    modelName: 'anchorChart',
+    modelName: "anchorChart",
+    freezeTableName: true
   });
   return anchorChart;
 };

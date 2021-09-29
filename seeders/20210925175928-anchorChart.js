@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkInsert('anchorChart',
+    await queryInterface.bulkInsert("anchorChart",
       [{
         subject: "Chemistry",
         grade: "10th",
@@ -33,7 +33,7 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('anchorChart', null, {});
+    return queryInterface.bulkDelete("anchorChart", null, {});
     /**
      * Add commands to revert seed here.
      *
