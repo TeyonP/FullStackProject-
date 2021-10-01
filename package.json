@@ -20,6 +20,8 @@
   "homepage": "https://github.com/TeyonP/FullStackProject-#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "express-es6-template-engine": "^2.2.3",
+    "node": "^16.10.0",
     "pg": "^8.7.1",
     "sequelize": "^6.6.5"
   },
