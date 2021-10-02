@@ -1,3 +1,4 @@
+const bcrypt = require('bcrypt');
 const express = require('express');
 const router = express.Router();
 
@@ -36,6 +37,9 @@ router.post('/', async (req, res) => {
         password,
     });
 
+    const salt = await bcrypt.genSalt(10);
+    newUser.password = await bcrypt.hash(newUser.password, salt);
+    await newUser.save();
 
     // Send back the new user's ID in the response:
     res.json({
