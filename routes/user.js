@@ -1,3 +1,4 @@
+const bcrypt = require('bcrypt');
 const express = require('express');
 const router = express.Router();
 
@@ -25,11 +26,20 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
     // req.body contains an Object with username, email, password
     const { username, email, password, } = req.body;
+
+    const previousUser = await User.findOne({ where: { email } }); //finds user in the database if user exists
+
+    if (previousUser) return res.status(400).send("User already registered.");
+
     const newUser = await User.create({
         username,
         email,
         password,
     });
+
+    const salt = await bcrypt.genSalt(10);
+    newUser.password = await bcrypt.hash(newUser.password, salt);
+    await newUser.save();
 
     // Send back the new user's ID in the response:
     res.json({
