@@ -20,7 +20,7 @@
   <body>
     <nav class="navbar navbar-light bg-light position-sticky">
       <div class="container-fluid">
-        <form class="d-flex">
+        <!-- <form class="d-flex">
           <input
             class="form-control me-2"
             type="search"
@@ -28,7 +28,7 @@
             aria-label="Search"
           />
           <button class="btn btn-outline-primary" type="submit">Search</button>
-        </form>
+        </form> -->
         <div class="d-flex justifty-content-around">
           <ul class="navbar-nav nav-justified lh-1 align-items-center">
             <li class="nav-item">
@@ -90,27 +90,29 @@
         <h3>Login</h3>
         <form class="border m-3">
           <div class="mb-3 mx-3">
-            <label for="inputEmail3" class="col-sm-2 col-form-label"
+            <label for="userLogin" class="col-sm-2 col-form-label"
               >Username</label
             >
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputUserEmail" />
+              <input type="text" class="form-control" id="userLogin" />
             </div>
           </div>
           <div class="mb-3 mx-3">
-            <label for="inputPassword3" class="col-sm-2 col-form-label"
+            <label for="passwordLogin" class="col-sm-2 col-form-label"
               >Password</label
             >
             <div class="col-sm-10">
-              <input
-                type="password"
-                class="form-control"
-                id="inputUserPassword"
-              />
+              <input type="password" class="form-control" id="passwordLogin" />
             </div>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary m-3">Sign in</button>
+            <button
+              type="submit"
+              class="btn btn-primary m-3"
+              id="btn-submit-login"
+            >
+              Sign in
+            </button>
           </div>
         </form>
       </div>
@@ -120,29 +122,19 @@
         <h3>Registration</h3>
         <form class="row g-3 mx-3 border m-3">
           <div class="col-12">
-            <label for="inputEmail4" class="form-label">Username</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail4"
-              required
-            />
+            <label for="usernameReg" class="form-label">Username</label>
+            <input type="text" class="form-control" id="usernameReg" required />
           </div>
           <div class="col-12">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail4"
-              required
-            />
+            <label for="emailReg" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailReg" required />
           </div>
           <div class="col-12">
-            <label for="inputPassword4" class="form-label">Password</label>
+            <label for="passwordReg" class="form-label">Password</label>
             <input
               type="password"
               class="form-control"
-              id="inputPassword4"
+              id="passwordReg"
               required
             />
           </div>
@@ -172,7 +164,11 @@
   </div> -->
 
           <div class="col-12">
-            <button type="submit" class="btn btn-primary m-3">
+            <button
+              type="submit"
+              class="btn btn-primary m-3"
+              id="btn-submit-reg"
+            >
               Create Account
             </button>
           </div>
@@ -184,5 +180,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./userRegLogin.js"></script>
   </body>
 </html>
