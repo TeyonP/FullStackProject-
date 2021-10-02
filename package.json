@@ -20,10 +20,6 @@
   },
   "homepage": "https://github.com/TeyonP/FullStackProject-#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "cli": "^1.0.1",
-=======
->>>>>>> 288b248acb8b0ff7b23235f338dfc939b9214b46
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-es6-template-engine": "^2.2.3",
