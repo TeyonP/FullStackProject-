@@ -61,4 +61,56 @@ router.delete("/:id", async (req, res) => {
   res.json(deletedUser);
 });
 
+router.post("/registered", async (req, res) => {
+  const { username, email, password } = req.body;
+  //   console.log(username, email, password);
+  //   res.json({ message: "User Created" });
+  User.findAll({
+    where: {
+      username: username
+    }
+  }).then(users => {
+    console.log(users);
+    if (users.length == 0) {
+      const passwordHash = bcrypt.hashSync(password, 10);
+      User.create({
+        username: username,
+        email: email,
+        password: passwordHash,
+        isAdmin: false
+      }).then(() => {
+        res.json({ isRegistered: true, message: "User Created" });
+      });
+    } else {
+      res
+        .status(409)
+        .json({ error: "User Already Exists", isRegistered: false });
+    }
+  });
+});
+
+router.post("/login", async (req, res) => {
+  const { username, email, password } = req.body;
+  User.findAll({
+    where: {
+      username: username
+    }
+  }).then(users => {
+    if (users.length > 0) {
+      let user = users[0];
+      let passwordHash = user.password;
+
+      if (bcrypt.compareSync(password, passwordHash)) {
+        res.json({ isLoggedIn: true });
+      } else {
+        res
+          .status(403)
+          .json({ error: "Password is incorrect", isLoggedIn: false });
+      }
+    } else {
+      res.status(404).json({ error: "User does not exist", isLoggedIn: false });
+    }
+  });
+});
+
 module.exports = router;

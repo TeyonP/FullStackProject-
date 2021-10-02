@@ -14,6 +14,20 @@ regSubmitButton.addEventListener("click", e => {
     password: passwordReg.value
   };
   console.log(newRegisteredUser);
+  fetch("http://localhost:3000/user/registered", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newRegisteredUser)
+  })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data.isRegistered);
+      if (data.isRegistered) {
+        location.reload();
+      }
+    });
 });
 
 loginSubmitButton.addEventListener("click", e => {
@@ -23,4 +37,18 @@ loginSubmitButton.addEventListener("click", e => {
     password: passwordLogin.value
   };
   console.log(userSignin);
+  fetch("http://localhost:3000/user/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(userSignin)
+  })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      if (data.isLoggedIn) {
+        location.replace("../shopping_page/shopping_page.html");
+      }
+    });
 });
