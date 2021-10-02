@@ -10,13 +10,14 @@ const port = 3000;
 const express = require('express');
 const app = express();
 
-const es6Renderer = require("express-es6-template-engine");
-app.engine("html", es6Renderer);
-app.set("views", "templates");
-app.set("view engine", "html");
+// const es6Renderer = require("express-es6-template-engine");
+// app.engine("html", es6Renderer);
+// app.set("views", "templates");
+// app.set("view engine", "html");
 
-const server = http.createServer(app);
-const db = require("./db");
+// const server = http.createServer(app);
+// const db = require("./db");
+
 app.get('/user', async (req, res) => {
     res.setHeader("Content-Type", "application/json");
     const user = await User.findAll();
@@ -29,6 +30,6 @@ app.get('/anchorChart', async (req, res) => {
     res.json(chart);
 })
 
-server.listen(port, hostname, () => {
+app.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
