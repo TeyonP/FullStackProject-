@@ -25,7 +25,11 @@ regSubmitButton.addEventListener("click", e => {
     .then(data => {
       console.log(data.isRegistered);
       if (data.isRegistered) {
-        location.reload();
+        let el = document.getElementById("registration-success");
+        el.classList.toggle("hidden");
+        setTimeout(() => {
+          location.reload();
+        }, 2000);
       }
     });
 });
@@ -49,6 +53,14 @@ loginSubmitButton.addEventListener("click", e => {
       console.log(data);
       if (data.isLoggedIn) {
         location.replace("../shopping_page/shopping_page.html");
+      } else {
+        let el = document.getElementById("login-failed");
+        el.classList.toggle("hidden");
       }
+      // if (data.isAdmin) {
+      //   location.replace("../shopping_page/shopping_page.html");
+      //   let el = document.getElementsByClassName("admin-login");
+      //   el.classList.toggle("hidden");
+      // }
     });
 });
