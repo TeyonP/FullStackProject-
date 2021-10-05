@@ -14,6 +14,24 @@ regSubmitButton.addEventListener("click", e => {
     password: passwordReg.value
   };
   console.log(newRegisteredUser);
+  fetch("http://localhost:3000/user/registered", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newRegisteredUser)
+  })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data.isRegistered);
+      if (data.isRegistered) {
+        let el = document.getElementById("registration-success");
+        el.classList.toggle("hidden");
+        setTimeout(() => {
+          location.reload();
+        }, 2000);
+      }
+    });
 });
 
 loginSubmitButton.addEventListener("click", e => {
@@ -23,4 +41,26 @@ loginSubmitButton.addEventListener("click", e => {
     password: passwordLogin.value
   };
   console.log(userSignin);
+  fetch("http://localhost:3000/user/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(userSignin)
+  })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      if (data.isLoggedIn) {
+        location.replace("../shopping_page/shopping_page.html");
+      } else {
+        let el = document.getElementById("login-failed");
+        el.classList.toggle("hidden");
+      }
+      // if (data.isAdmin) {
+      //   location.replace("../shopping_page/shopping_page.html");
+      //   let el = document.getElementsByClassName("admin-login");
+      //   el.classList.toggle("hidden");
+      // }
+    });
 });
