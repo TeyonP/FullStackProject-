@@ -14,9 +14,9 @@ app.engine("html", es6Renderer);
 app.set("views", "./shopping_page");
 app.set("view engine", "html");
 
-app.get("/:id",  (req, res) => {
+/*app.get("/:id",  (req, res) => {
   res.status(200).send({id: req.params.id});
-});
+});*/
 
 require("./startup/routes")(app);
 
