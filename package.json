@@ -34,8 +34,7 @@
     "nodemon": "^2.0.13",
     "sequelize-cli": "^6.2.0"
   },
-"engines": {
-  "node": "16.8.0"
-}
-
+  "engines": {
+    "node": "16.8.0"
+  }
 }
