@@ -28,3 +28,4 @@ Gabriel Lopez
 Mike Woolf
 
 Teyon Price
+https://avatars.githubusercontent.com/u/85767134?s=48&v=4
