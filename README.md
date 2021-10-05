@@ -1,26 +1,24 @@
 # FullStackProject-
 
-Project Idea: Anchor Chart Ecommerce Website
-1.	Login Function
-a.	Email
-b.	Password
-2.	Register New user (Teyon)
-a.	First Name
-b.	Last Name
-c.	Email
-d.	Password
-e.	Street
-f.	City 
-g.	State
-h.	Zip code
-3.	Product Database (Gabriel)
-a.	Picture
-b.	Subject
-c.	Grade
-d.	Sub topic
-e.	Price
-4.	Front End (Mike)
-a.	Cards for product
-b.	Cart
-c.	Login Form
-d.	Product Adding Form
+Description
+We created a web app that sells anchor charts. An anchor chart is a tool used to support instruction. As you teach a lesson, you create an anchor chart, together with your students, that captures the most important content and relevant strategies. The user will
+
+Technologies Used
+
+Bootstrap
+HTML
+Node
+Express
+Sequelize
+Javascript
+
+Deployment: Heroku
+
+
+Team Members
+
+Gabriel Lopez
+
+Mike Woolf
+
+Teyon Price
