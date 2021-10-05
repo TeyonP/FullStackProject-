@@ -19,5 +19,7 @@ Server Deployment: Heroku
 Team Members
 
 Gabriel Lopez
+
 Mike Woolf
+
 Teyon Price
