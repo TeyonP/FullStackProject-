@@ -52,7 +52,7 @@ loginSubmitButton.addEventListener("click", e => {
     .then(data => {
       console.log(data);
       if (data.isLoggedIn) {
-        location.replace("../shopping_page/shopping_page.html");
+        location.replace("http://localhost:3000/shoppingpage");
       } else {
         let el = document.getElementById("login-failed");
         el.classList.toggle("hidden");

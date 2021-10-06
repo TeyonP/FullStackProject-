@@ -63,13 +63,14 @@
         <div class="container d-flex justify-content-center flex-column">
                     <a href="#" class="btn btn-success hidden col-2 admin-login">Add anchorChart</a>
             <div class="card" style="width: 20rem;">
+              <h1>${anchorCharts.subject}</h1>
         ${anchorCharts.map(anchorChart => `
-            <img src="${data.image}" alt="" class="card-img-top">
+            <!-- <img src=`${anchorChart.image}` alt="" class="card-img-top"> -->
             <div class="card-body">
-              <h5 class="card-title">${data.topic}</h5>
-              <p class="card-text">${data.subject}</p>
-              <p class="card-text">${data.grade}</p>
-              <p class="card-text">$${data.price}</p>
+              <h5 class="card-title">${anchorChart.topic}</h5>
+              <p class="card-text">${anchorChart.subject}</p>
+              <p class="card-text">${anchorChart.grade}</p>
+              <p class="card-text">${anchorChart.price}</p>
               <span>
                 <a href="#" class="btn btn-primary">add to cart</a>
                 <a href="#" class="btn btn-warning hidden admin-login">update</a>
