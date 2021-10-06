@@ -8,19 +8,36 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 2. User will be required to register and login using a secure password.
 3. Once the user has registered and logged in to the site, a selection of various Anchor Charts will displayed along with pricing and subject information.
 
-# Technologies Used
+# Front-end:
+-HTML & CSS
 
--Bootstrap
+-JavaScript
 
--HTML
+-Bootstrap elements
 
--Node
+-Media queries
 
--Express
+-Mobile responsiveness
 
--Sequelize
+# Back-end:
 
--Javascript
+-Node.js
+
+-JavaScript
+
+-PostgreSQL database (Supabase)
+
+-RESTful API
+
+-Express package
+
+-ES6 Templating
+
+-Form validation
+
+-Full C.R.U.D. functionality
+
+-Bcrypt user authentication & validation
 
 # Server Deployment: Heroku
 
