@@ -15,17 +15,13 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 
 -Bootstrap elements
 
--Media queries
-
--Mobile responsiveness
-
 # Back-end:
 
 -Node.js
 
 -JavaScript
 
--PostgreSQL database (Supabase)
+-PostgreSQL database
 
 -RESTful API
 
@@ -35,7 +31,7 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 
 -Form validation
 
--Full C.R.U.D. functionality
+- CRUD functionality
 
 -Bcrypt user authentication & validation
 
