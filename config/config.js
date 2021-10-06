@@ -19,7 +19,8 @@ module.exports =
     "username": process.env.USERNAME,
     "password": process.env.PASSWORD || null,
     "database": "anchorChart",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "host": "localhost",
+    "dialect": "postgres",
+    "use_env_variable": "DATABASE_URL"
   }
 }
