@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 const Sequelize = require("sequelize");
-const { anchorChart } = require("../models");
+const { anchorChart } = require("./models");
 
 const es6Renderer = require("express-es6-template-engine");
 app.engine("html", es6Renderer);
@@ -18,12 +18,16 @@ app.set("views", "templates");
 app.set("view engine", "html");
 
 app.get("/", async (req, res) => {
-    res.setHeader("Content-Type", "application/json");
-    const chart = await anchorChart.findAll();
-    res.json(chart);
+  // res.setHeader("Content-Type", "application/json");
+  const chart = await anchorChart.findAll();
+  res.render('shopping_page', {
+      locals: {
+          anchorCharts: chart
+      }
+  });
 });
 
-app.get("/shoppingpage", (req, res) => {
+/*app.get("/shoppingpage", (req, res) => {
     // console.log("route is working");
     // res.json({});
     db.anchorChart.findAll().then(results => {
@@ -35,7 +39,7 @@ app.get("/shoppingpage", (req, res) => {
             }
         });
     });
-});
+});*/
 require("./startup/routes")(app);
 
 app.listen(port, () => {
