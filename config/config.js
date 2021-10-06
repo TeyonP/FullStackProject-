@@ -21,6 +21,12 @@ module.exports =
     "database": "anchorChart",
     "host": "localhost",
     "dialect": "postgres",
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": "DATABASE_URL",
+    "dialectOptions": {
+      "ssl": {
+          "rejectUnauthorized": false // <<<<<<< YOU NEED THIS
+      }
+  }
+
   }
 }
