@@ -1,4 +1,4 @@
-const anchorChartData = () => {
+function anchorChartData() {
   fetch("http://localhost:3000/anchorChart", {
     // credentials: "include",
     headers: {
@@ -6,8 +6,7 @@ const anchorChartData = () => {
       "Content-Type": "application/json"
     }
   })
-    .then(response => response.json())
-    .then(json => console.log(json));
+    .then(res => {
+      res.render('shopping_page')
+    })
 };
-
-anchorChartData();

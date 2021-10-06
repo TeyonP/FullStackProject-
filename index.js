@@ -18,26 +18,27 @@ app.set("views", "templates");
 app.set("view engine", "html");
 
 app.get("/", async (req, res) => {
-  res.setHeader("Content-Type", "application/json");
-  const chart = await anchorChart.findAll();
-  res.json(chart);
+    res.setHeader("Content-Type", "application/json");
+    const chart = await anchorChart.findAll();
+    res.json(chart);
 });
 
 app.get("/shoppingpage", (req, res) => {
-  // console.log("route is working");
-  // res.json({});
-  db.anchorChart.findAll().then(results => {
-    console.log(results);
+    // console.log("route is working");
     // res.json({});
-    res.render("shopping_page", {
-      locals: {
-        anchorCharts: results
-      }
+    db.anchorChart.findAll().then(results => {
+        console.log(results);
+        // res.json({});
+        res.render("shopping_page", {
+            locals: {
+                anchorCharts: results
+            }
+        });
     });
-  });
 });
 require("./startup/routes")(app);
 
 app.listen(port, () => {
-  console.log(`Server running https://${hostname}/${port}`);
+    console.log(`Server running `);
+    console.log(`Server running https://${hostname}/${port}`);
 });

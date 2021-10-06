@@ -27,6 +27,7 @@ regSubmitButton.addEventListener("click", e => {
       if (data.isRegistered) {
         let el = document.getElementById("registration-success");
         el.classList.toggle("hidden");
+        location.replace("../shopping_page/shopping_page.html");
         setTimeout(() => {
           location.reload();
         }, 2000);
