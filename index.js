@@ -18,13 +18,14 @@ app.set("views", "templates");
 app.set("view engine", "html");
 
 app.get("/", async (req, res) => {
-  // res.setHeader("Content-Type", "application/json");
-  const chart = await anchorChart.findAll();
+  res.setHeader("Content-Type", "application/json");
+  res.send("hello world");
+ /* const chart = await anchorChart.findAll();
   res.render('shopping_page', {
       locals: {
           anchorCharts: chart
       }
-  });
+  });*/
 });
 
 /*app.get("/shoppingpage", (req, res) => {
