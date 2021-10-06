@@ -9,13 +9,18 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
+const Sequelize = require("sequelize");
+const { anchorChart } = require("../models");
+
 const es6Renderer = require("express-es6-template-engine");
 app.engine("html", es6Renderer);
 app.set("views", "templates");
 app.set("view engine", "html");
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
+app.get("/", async (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  const chart = await anchorChart.findAll();
+  res.json(chart);
 });
 
 app.get("/shoppingpage", (req, res) => {
