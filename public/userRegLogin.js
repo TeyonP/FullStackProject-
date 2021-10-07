@@ -54,7 +54,7 @@ loginSubmitButton.addEventListener("click", e => {
       console.log(data);
       if (data.isLoggedIn) {
         console.log(location);
-        location.replace("http://localhost:3000/shopping_page");
+        location.replace("http://localhost:3000/shoppingpage");
       } else {
         let el = document.getElementById("login-failed");
         el.classList.toggle("hidden");
