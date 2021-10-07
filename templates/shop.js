@@ -5,8 +5,7 @@ function anchorChartData() {
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json"
     }
-  })
-    .then(res => {
-      res.render('shopping_page')
-    })
-};
+  }).then(res => {
+    res.render("./shopping_page.html");
+  });
+}
