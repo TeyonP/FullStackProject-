@@ -31,7 +31,7 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 
 -Form validation
 
-- CRUD functionality
+-CRUD functionality
 
 -Bcrypt user authentication & validation
 
