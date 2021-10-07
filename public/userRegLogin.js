@@ -27,7 +27,7 @@ regSubmitButton.addEventListener("click", e => {
       if (data.isRegistered) {
         let el = document.getElementById("registration-success");
         el.classList.toggle("hidden");
-        location.replace("../shopping_page/shopping_page.html");
+        location.replace("http://localhost:3000/shoppingpage");
         setTimeout(() => {
           location.reload();
         }, 2000);
@@ -42,7 +42,7 @@ loginSubmitButton.addEventListener("click", e => {
     password: passwordLogin.value
   };
   console.log(userSignin);
-  fetch("http://localhost:3000/user/login", {
+  fetch("http://localhost:3000/user/login/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -53,6 +53,7 @@ loginSubmitButton.addEventListener("click", e => {
     .then(data => {
       console.log(data);
       if (data.isLoggedIn) {
+        console.log(location);
         location.replace("http://localhost:3000/shoppingpage");
       } else {
         let el = document.getElementById("login-failed");
@@ -65,3 +66,4 @@ loginSubmitButton.addEventListener("click", e => {
       // }
     });
 });
+
