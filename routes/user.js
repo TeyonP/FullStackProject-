@@ -113,12 +113,10 @@ router.post("/login", async (req, res) => {
       if (bcrypt.compareSync(password, passwordHash)) {
         res.json({ isLoggedIn: true });
       } else {
-        res
-          .status(403)
-          .json({
-            error: "Login failed, please check username and password",
-            isLoggedIn: false
-          });
+        res.status(403).json({
+          error: "Login failed, please check username and password",
+          isLoggedIn: false
+        });
       }
     } else {
       res.status(404).json({ error: "User does not exist", isLoggedIn: false });
