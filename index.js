@@ -21,13 +21,13 @@ app.set("view engine", "html");
 // app.use(express.static(path.join(__dirname, "templates")));
 app.get("/", async (req, res) => {
     // res.setHeader("Content-Type", "application/json");
-    //   res.send("hello world");
-    const chart = await anchorChart.findAll();
-    res.render("landing_page", {
-        locals: {
-            anchorCharts: chart
-        }
-    });
+    res.send("hello world");
+    // const chart = await anchorChart.findAll();
+    // res.render("landing_page", {
+    //     locals: {
+    //         anchorCharts: chart
+    //     }
+    // });
 });
 
 app.get("/shoppingpage", (req, res) => {
