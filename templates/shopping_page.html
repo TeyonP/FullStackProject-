@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
     <title>Anchor Chart</title>
   </head>
   <body>
@@ -74,9 +74,10 @@
       <h1 class="section-title border-bottom d-flex p-5">Shop</h1>
     </div>
     <div class="container d-flex justify-content-center flex-column">
-      <a href="#" class="btn btn-success hidden col-2 admin-login"
-        >Add anchorChart</a
-      >
+      <div class="admin-login">
+        <a href="#" class="btn btn-success col-2">Add anchorChart</a>
+      </div>
+
       ${anchorCharts.map(anchorChart => `
       <div class="card" style="width: 20rem">
         <img src="${anchorChart.image}" alt="" class="card-img-top" />
@@ -87,8 +88,8 @@
           <p class="card-text">$${anchorChart.price}</p>
           <span>
             <a href="#" class="btn btn-primary">add to cart</a>
-            <a href="#" class="btn btn-warning hidden admin-login">update</a>
-            <a href="#" class="btn btn-danger hidden admin-login">delete</a>
+            <a href="#" class="btn btn-warning admin-login">update</a>
+            <a href="#" class="btn btn-danger admin-login">delete</a>
           </span>
         </div>
       </div>
