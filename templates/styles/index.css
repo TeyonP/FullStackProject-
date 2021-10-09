@@ -27,3 +27,7 @@
 .hidden {
   display: none;
 }
+
+.admin-login {
+  display: none;
+}
