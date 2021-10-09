@@ -21,6 +21,7 @@ app.set("view engine", "html");
 app.use(express.static(__dirname + "/templates"));
 // app.use(express.static(path.join(__dirname, "templates")));
 app.get("/", async (req, res) => {
+
   // res.setHeader("Content-Type", "application/json");
   //   res.send("hello world");
   const chart = await anchorChart.findAll();
