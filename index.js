@@ -19,9 +19,8 @@ app.engine("html", es6Renderer);
 app.set("views", "templates");
 app.set("view engine", "html");
 app.use(express.static(__dirname + "/templates"));
-// app.use(express.static(path.join(__dirname, "templates")));
+app.use(express.static(path.join(__dirname, "templates")));
 app.get("/", async (req, res) => {
-
   // res.setHeader("Content-Type", "application/json");
   //   res.send("hello world");
   const chart = await anchorChart.findAll();
@@ -39,6 +38,20 @@ app.get("/shoppingpage", (req, res) => {
     console.log(results);
     // res.json({});
     res.render("shopping_page", {
+      locals: {
+        anchorCharts: results
+      }
+    });
+  });
+});
+
+app.get("/admin", (req, res) => {
+  // console.log("route is working");
+  // res.json({});
+  db.anchorChart.findAll().then(results => {
+    console.log(results);
+    // res.json({});
+    res.render("admin_page", {
       locals: {
         anchorCharts: results
       }
