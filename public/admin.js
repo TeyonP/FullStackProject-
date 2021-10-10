@@ -1,6 +1,7 @@
 const btnAddAnchorChart = document.getElementById("addAnchorBtn");
 const btnUpdateAnchorChart = document.getElementById("updateAnchorBtn");
 const btnDelelteAnchorChart = document.getElementById("deleteAnchorBtn");
+
 const updateBtn = document.getElementById("updateBtn");
 const inputTopic = document.getElementById("inputTopic");
 const inputSubject = document.getElementById("inputSubject");
@@ -46,3 +47,15 @@ updateBtn.addEventListener("click", e => {
     body: JSON.stringify(currentAnchorChart)
   });
 });
+
+
+function deleteAnchorChart(id) {
+  fetch(`http://localhost:3000/anchorChart/${id}`, {
+    method: 'DELETE',
+    headers: {
+      "Content-Type": "application/json"
+    },
+  });
+  location.replace("http://localhost:3000/admin");
+};
+
