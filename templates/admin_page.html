@@ -84,8 +84,15 @@
           <p class="card-text">Grade: ${anchorChart.grade}</p>
           <p class="card-text">Price: $${anchorChart.price}</p>
           <span>
-            <a href="#" class="btn btn-warning">update</a>
-            <a href="#" class="btn btn-danger">delete</a>
+            <a
+              href="#"
+              class="btn btn-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#updateAnchorModal"
+              id="updateBtn"
+              >update</a
+            >
+            <a href="#" class="btn btn-danger" id="deleteAnchorBtn">delete</a>
           </span>
         </div>
       </div>
@@ -115,24 +122,39 @@
           </div>
           <div class="modal-body">
             <form>
-  <div class="row mb-3">
-    <label for="inputSubject" class="col-sm-2 col-form-label">Subject</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputSubject">
-    </div>
-  </div>
-  <div class="row mb-3">
-    <label for="inputGrade" class="col-sm-2 col-form-label">Grade</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputGrade">
-    </div>
-  </div>
-    <div class="row mb-3">
-    <label for="inputPrice" class="col-sm-2 col-form-label">Price</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputPrice">
-    </div>
-  </div>
+              <div class="row mb-3">
+                <label for="inputTopic" class="col-sm-2 col-form-label"
+                  >Topic</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputTopic" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputSubject" class="col-sm-2 col-form-label"
+                  >Subject</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputSubject" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputGrade" class="col-sm-2 col-form-label"
+                  >Grade</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputGrade" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPrice" class="col-sm-2 col-form-label"
+                  >Price</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPrice" />
+                </div>
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
             <button
@@ -142,7 +164,82 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary" id="addAnchorBtn">
+              Add anchorChart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Update anchorChart Modal -->
+    <div
+      class="modal fade"
+      id="updateAnchorModal"
+      tabindex="-1"
+      aria-labelledby="updateAnchorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="updateAnchorModalLabel">
+              Update anchorChart
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row mb-3">
+                <label for="inputTopic" class="col-sm-2 col-form-label"
+                  >Topic</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputTopic" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputSubject" class="col-sm-2 col-form-label"
+                  >Subject</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputSubject" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputGrade" class="col-sm-2 col-form-label"
+                  >Grade</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputGrade" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputPrice" class="col-sm-2 col-form-label"
+                  >Price</label
+                >
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPrice" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" id="updateAnchorBtn">
+              Update anchorChart
+            </button>
           </div>
         </div>
       </div>
@@ -153,5 +250,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="/admin.js"></script>
   </body>
 </html>
