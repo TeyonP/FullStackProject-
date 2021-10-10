@@ -60,6 +60,7 @@ loginSubmitButton.addEventListener("click", e => {
         el.classList.toggle("hidden");
       }
       if (data.isLoggedIn && data.isAdmin) {
+
         location.replace("http://localhost:3000/admin");
       }
     });
