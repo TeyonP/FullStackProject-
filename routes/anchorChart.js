@@ -7,21 +7,18 @@ const { anchorChart } = require("../models");
 router.get("/", async (req, res) => {
     // res.setHeader("Content-Type", "application/json");
     const chart = await anchorChart.findAll();
-    res.render('shopping_page', {
-        locals: {
-            anchorCharts: chart
-        }
-    });
+    res.json(chart);
 });
 
 router.get("/:id", async (req, res) => {
+    const { id } = req.params;
     try {
-        const oneChart = await anchorChart.findByPk(req.params.id);
+        const oneChart = await anchorChart.findByPk(id);
         res.json(oneChart);
     } catch (e) {
         console.log(e);
         res.status(404).json({
-            message: "Anchor Chart not found"
+            message: `Anchor Chart not found ${id}`
         });
     }
 });

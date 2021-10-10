@@ -20,6 +20,8 @@ app.set("views", "templates");
 app.set("view engine", "html");
 app.use(express.static(__dirname + "/templates"));
 app.use(express.static(path.join(__dirname, "templates")));
+
+
 app.get("/", async (req, res) => {
   // res.setHeader("Content-Type", "application/json");
   //   res.send("hello world");
@@ -31,19 +33,26 @@ app.get("/", async (req, res) => {
   });
 });
 
-app.get("/shoppingpage", (req, res) => {
-  // console.log("route is working");
-  // res.json({});
-  db.anchorChart.findAll().then(results => {
-    console.log(results);
-    // res.json({});
-    res.render("shopping_page", {
-      locals: {
-        anchorCharts: results
-      }
-    });
+app.get("/shoppingpage", async (req, res) => {
+  const chart = await anchorChart.findAll();
+  res.render("shopping_page", {
+    locals: {
+      anchorCharts: chart
+    }
   });
 });
+
+app.get("/product/:id", async (req, res) => {
+  const { id } = req.params;
+  const oneChart = await anchorChart.findByPk(id);
+  console.log(oneChart);
+  res.render("product", {
+    locals: {
+      oneChart
+    }
+  });
+});
+
 
 app.get("/admin", (req, res) => {
   // console.log("route is working");
@@ -58,6 +67,8 @@ app.get("/admin", (req, res) => {
     });
   });
 });
+
+
 require("./startup/routes")(app);
 
 app.listen(port, () => {
