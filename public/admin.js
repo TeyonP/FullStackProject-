@@ -24,4 +24,6 @@ btnAddAnchorChart.addEventListener("click", e => {
     },
     body: JSON.stringify(newAnchorChart)
   });
+
+  location.replace("http://localhost:3000/admin");
 });
