@@ -59,10 +59,8 @@ loginSubmitButton.addEventListener("click", e => {
         let el = document.getElementById("login-failed");
         el.classList.toggle("hidden");
       }
-      if (data.isAdmin) {
-        let el = document.getElementsByClassName("admin-login");
-        console.log(el);
-        el.classList.toggle("admin-login");
+      if (data.isLoggedIn && data.isAdmin) {
+        location.replace("http://localhost:3000/admin");
       }
     });
 });
