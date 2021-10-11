@@ -26,6 +26,7 @@
     "express": "^4.17.1",
     "express-es6-template-engine": "^2.2.3",
     "heroku": "^7.59.0",
+    "morgan": "^1.10.0",
     "node": "^16.10.0",
     "pg": "^8.7.1",
     "sequelize": "^6.6.5"
