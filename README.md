@@ -9,7 +9,11 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 
 * [Technologies Used](#technologies-used)
 
+# Front-End
 
+![bootstrap](https://user-images.githubusercontent.com/85767134/137334676-f8720692-b74d-4480-a752-da0c4f19644b.jpg), ![css](https://user-images.githubusercontent.com/85767134/137334689-565d0fc4-099f-4040-9349-d7548e9c8906.jpg),![html5](https://user-images.githubusercontent.com/85767134/137334706-f05993f4-d5df-404a-a803-7bc9fe9c5432.jpg)
+
+# Back-end:
 
 * [Features](#features)
 * [Screenshots](#screenshots)
@@ -24,7 +28,7 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 2. User will be required to register and login using a password.
 3. Once the user has registered and logged in to the site, a selection of various Anchor Charts will displayed along with pricing and subject information.
 
-# Front-end:
+
 -HTML & CSS
 
 -JavaScript
