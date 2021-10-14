@@ -68,6 +68,10 @@ function updateAnchorChart(id) {
     .then(anchorChart => {
       populateModal(anchorChart);
     });
+
+  let updateAnchorButton = document.getElementById('updateAnchorButton');
+  // console.log(anchorChart.id);
+  updateAnchorButton.addEventListener('click', function () { updateModalButton(id); }, false);
   // console.log("Update has been clicked with id: ", id);
 };
 
@@ -90,3 +94,31 @@ function populateModal(anchorChart) {
   // console.log(priceField.value);
   priceField.value = anchorChart.price;
 };
+
+function updateModalButton(id) {
+  console.log(id);
+
+  let topicField = document.getElementById('topicField');
+  let subjectField = document.getElementById('subjectField');
+  let gradeField = document.getElementById('gradeField');
+  let priceField = document.getElementById('priceField');
+  let parsedPriceField = parseInt(priceField.value);
+  // let integer = parseInt(priceField);
+
+  let anchorChart = {
+    topic: topicField.value,
+    subject: subjectField.value,
+    grade: gradeField.value,
+    price: parsedPriceField
+  };
+
+  fetch(`http://localhost:3000/anchorChart/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(anchorChart)
+  })
+  location.replace("http://localhost:3000/admin");
+};
+
