@@ -6,7 +6,8 @@
 * [Description](#description)
 * [Technologies Used](#technologies-used)
 * [User Instructions](#user-instructions)
-* [Room for Improvement](#room-for-improvement)
+* [Technical Issues](#technical-issues)
+* [Room for Improvement](#room-for-improvement0
 * [Team ](#team)
 
 # Description
@@ -28,12 +29,14 @@
 2. User will be required to login with their username and password
 3. Once the user has logged in, they will be directed to the shopping page where they can view, create, and purchase various anchor charts
 
+# Technical Issues
+
 # Room for Improvement
 
 
 # Server Deployment: Heroku
 
-![heroku](https://user-images.githubusercontent.com/85767134/137340614-3a88b509-52b8-4930-9b78-18700aa4ed29.jpg)
+<img width="350" alt="heroku" src="https://user-images.githubusercontent.com/85767134/137340614-3a88b509-52b8-4930-9b78-18700aa4ed29.jpg">
 
 # Team Members
 
