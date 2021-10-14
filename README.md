@@ -36,7 +36,7 @@
 
 # Server Deployment: Heroku
 
-<img width="350" alt="heroku" src="https://user-images.githubusercontent.com/85767134/137340614-3a88b509-52b8-4930-9b78-18700aa4ed29.jpg">
+![heroku1](https://user-images.githubusercontent.com/85767134/137354981-c3842b26-7ef7-4982-98c1-1109603015e0.png)
 
 # Team Members
 
