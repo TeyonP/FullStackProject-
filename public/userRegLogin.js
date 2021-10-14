@@ -14,7 +14,7 @@ regSubmitButton.addEventListener("click", e => {
     password: passwordReg.value
   };
   console.log(newRegisteredUser);
-  fetch("http://localhost:3000/user/registered", {
+  fetch("https://still-reef-68703.herokuapp.com/user/registered", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -27,7 +27,7 @@ regSubmitButton.addEventListener("click", e => {
       if (data.isRegistered) {
         let el = document.getElementById("registration-success");
         el.classList.toggle("hidden");
-        location.replace("http://localhost:3000/shoppingpage");
+        location.replace("https://still-reef-68703.herokuapp.com/shoppingpage");
         setTimeout(() => {
           location.reload();
         }, 2000);
@@ -42,7 +42,7 @@ loginSubmitButton.addEventListener("click", e => {
     password: passwordLogin.value
   };
   console.log(userSignin);
-  fetch("http://localhost:3000/user/login/", {
+  fetch("https://still-reef-68703.herokuapp.com/user/login/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -54,14 +54,14 @@ loginSubmitButton.addEventListener("click", e => {
       console.log(data);
       if (data.isLoggedIn) {
         console.log(location);
-        location.replace("http://localhost:3000/shoppingpage");
+        location.replace("https://still-reef-68703.herokuapp.com/shoppingpage");
       } else {
         let el = document.getElementById("login-failed");
         el.classList.toggle("hidden");
       }
       if (data.isLoggedIn && data.isAdmin) {
 
-        location.replace("http://localhost:3000/admin");
+        location.replace("https://still-reef-68703.herokuapp.com/admin");
       }
     });
 });
