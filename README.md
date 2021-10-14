@@ -7,7 +7,6 @@
 * [Technologies Used](#technologies-used)
 * [User Instructions](#user-instructions)
 * [Technical Issues](#technical-issues)
-* [Room for Improvement](#room-for-improvement)
 * [Team ](#team)
 
 # Description
@@ -40,11 +39,6 @@
 -CRUD Operations
 1. Pre-popultated modal form for the update function.
 2. 
-
-
-
-# Room for Improvement
-
 
 # Server Deployment: Heroku
 
