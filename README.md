@@ -8,6 +8,14 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 ## Table of Contents
 
 * [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
 
 # Front-End
 
