@@ -35,8 +35,9 @@
 
 Gabriel Lopez
 1. Product/User Database Creation
-2. CRUD operations PUT and DELETE functions completed
+2. CRUD operations PUT and DELETE functions
 3. Bcrypt Installation.
+4. Express JS routing
 
 
 Mike Woolf, <img width="50" alt="mike" src="https://user-images.githubusercontent.com/85767134/137340678-ec6f4265-5547-429c-884a-9d887f211d48.png">
