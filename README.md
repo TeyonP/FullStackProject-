@@ -38,7 +38,7 @@
 
 -CRUD Operations
 1. Pre-popultated modal form for the update function.
-2. 
+2. Issues with routing endpoints
 
 # Server Deployment: Heroku
 
@@ -50,7 +50,7 @@ Gabriel Lopez
 1. Product/User Database Creation
 2. CRUD operations(GET, PUSH, DELETE, POST) for product pages.
 3. Bcrypt Installation.
-4. 
+
 
 Mike Woolf, <img width="50" alt="mike" src="https://user-images.githubusercontent.com/85767134/137340678-ec6f4265-5547-429c-884a-9d887f211d48.png">
 1. Front-end webpage creation. (Admin, Shopping, Registration, Acount pages)
