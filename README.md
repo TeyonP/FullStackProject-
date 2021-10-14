@@ -31,6 +31,18 @@
 
 # Technical Issues
 
+-Heroku Deployment- 
+1. We initally experienced deployment issues due to different versions of node being installed.
+2. Incorrect Port Setup. We created a env.process.port file to bind our web server to the port.
+3. Missing gitignore file.
+4. Heroku didn't recognize our routes, we created a routes files to help with this issue.
+
+-CRUD Operations
+1. Pre-popultated modal form for the update function.
+2. 
+
+
+
 # Room for Improvement
 
 
