@@ -40,7 +40,7 @@ Gabriel Lopez
 4. Express JS routing
 
 
-Mike Woolf, <img width="50" alt="mike" src="https://user-images.githubusercontent.com/85767134/137340678-ec6f4265-5547-429c-884a-9d887f211d48.png">
+Mike Woolf <img width="50" alt="mike" src="https://user-images.githubusercontent.com/85767134/137340678-ec6f4265-5547-429c-884a-9d887f211d48.png">
 1. Front-end webpage creation. (Admin, Shopping, Registration, Acount pages)
 2. CRUD operartions(login/reg/ form/routes, shopping page/route admin page and POST for admin page)
 3. Image Card creation.
@@ -49,7 +49,7 @@ Mike Woolf, <img width="50" alt="mike" src="https://user-images.githubuserconten
 6. E6 Template engine
 
 
-Teyon Price, <img width="50" alt="teyon" src="https://user-images.githubusercontent.com/85767134/137349104-3ff71d2a-4ea3-42f2-8f4d-da82b0be46f3.png">
+Teyon Price <img width="50" alt="teyon" src="https://user-images.githubusercontent.com/85767134/137349104-3ff71d2a-4ea3-42f2-8f4d-da82b0be46f3.png">
 1. User Database Creation
 2. Jira Board Management
 3. Readme.md creation
