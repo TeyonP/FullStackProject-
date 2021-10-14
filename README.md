@@ -7,7 +7,7 @@
 * [Technologies Used](#technologies-used)
 * [User Instructions](#user-instructions)
 * [Technical Issues](#technical-issues)
-* [Room for Improvement](#room-for-improvement0
+* [Room for Improvement](#room-for-improvement)
 * [Team ](#team)
 
 # Description
