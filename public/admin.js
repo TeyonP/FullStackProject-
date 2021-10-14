@@ -18,7 +18,7 @@ btnAddAnchorChart.addEventListener("click", e => {
     price: inputPrice.value
   };
   console.log(newAnchorChart);
-  fetch("http://localhost:3000/anchorChart/", {
+  fetch("https://still-reef-68703.herokuapp.com/anchorChart/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -26,7 +26,7 @@ btnAddAnchorChart.addEventListener("click", e => {
     body: JSON.stringify(newAnchorChart)
   });
 
-  location.replace("http://localhost:3000/admin");
+  location.replace("https://still-reef-68703.herokuapp.com/admin");
 });
 
 updateBtn.addEventListener("click", e => {
@@ -39,7 +39,7 @@ updateBtn.addEventListener("click", e => {
     price: inputPrice.value
   };
   console.log(currentAnchorChart);
-  fetch("http://localhost:3000/anchorChart/:id", {
+  fetch("https://still-reef-68703.herokuapp.com/anchorChart/:id", {
     method: "Get",
     headers: {
       "Content-Type": "application/json"
@@ -48,14 +48,12 @@ updateBtn.addEventListener("click", e => {
   });
 });
 
-
 function deleteAnchorChart(id) {
-  fetch(`http://localhost:3000/anchorChart/${id}`, {
-    method: 'DELETE',
+  fetch(`https://still-reef-68703.herokuapp.com/anchorChart/${id}`, {
+    method: "DELETE",
     headers: {
       "Content-Type": "application/json"
-    },
+    }
   });
-  location.replace("http://localhost:3000/admin");
-};
-
+  location.replace("https://still-reef-68703.herokuapp.com/admin");
+}
