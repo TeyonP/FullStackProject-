@@ -33,7 +33,7 @@
 -Heroku Deployment- 
 1. We initally experienced deployment issues due to different versions of node being installed.
 2. Incorrect Port Setup. We created a env.process.port file to bind our web server to the port.
-3. Missing gitignore file.
+3. Missing gitignore file. Could'nt connect to POSTGres database
 4. Heroku didn't recognize our routes, we created a routes files to help with this issue.
 
 -CRUD Operations
@@ -47,9 +47,22 @@
 # Team Members
 
 Gabriel Lopez
+1. Product/User Database Creation
+2. CRUD operations(GET, PUSH, DELETE, POST) for product pages.
+3. Bcrypt Installation.
+4. 
 
 Mike Woolf, <img width="50" alt="mike" src="https://user-images.githubusercontent.com/85767134/137340678-ec6f4265-5547-429c-884a-9d887f211d48.png">
+1. Front-end webpage creation. (Admin, Shopping, Registration, Acount pages)
+2. CRUD operartions(GET, PUSH, DELETE, POST) for user pages
+3. Image Card creation.
+4. Express JS routing
+
 
 Teyon Price, <img width="50" alt="teyon" src="https://user-images.githubusercontent.com/85767134/137349104-3ff71d2a-4ea3-42f2-8f4d-da82b0be46f3.png">
+1. User Database Creation
+2. Jira Board Management
+3. Readme.md creation
+4. Heroku Deployment
 
 
