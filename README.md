@@ -1,6 +1,6 @@
 # Anchor Charts Full Stack Project
 
-<img width="300" alt="ac2" src="https://user-images.githubusercontent.com/85767134/137331761-f8705270-f27c-485a-9725-e7390c9b3c37.png">, <img width="300" alt="ac1" src="https://user-images.githubusercontent.com/85767134/137333494-5bbcea19-df2e-4110-95d3-06ee8ad7fc0d.jpg">, <img width="300" alt="math" src="https://user-images.githubusercontent.com/85767134/137356234-6971a6d4-6912-4770-9bc7-4712fb92ca4c.png">
+<img width="250" alt="ac2" src="https://user-images.githubusercontent.com/85767134/137331761-f8705270-f27c-485a-9725-e7390c9b3c37.png">, <img width="250" alt="ac1" src="https://user-images.githubusercontent.com/85767134/137333494-5bbcea19-df2e-4110-95d3-06ee8ad7fc0d.jpg">, <img width="250" alt="math" src="https://user-images.githubusercontent.com/85767134/137356234-6971a6d4-6912-4770-9bc7-4712fb92ca4c.png">
 
 ## Table of Contents
 * [Description](#description)
