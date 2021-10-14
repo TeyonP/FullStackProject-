@@ -23,6 +23,9 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 
 # Back-end:
 
+![node](https://user-images.githubusercontent.com/85767134/137340755-bb3f5b13-d6f0-4ada-82b9-c7d56e9cc4af.jpg), ![postgres](https://user-images.githubusercontent.com/85767134/137340810-9e5d7a98-be73-4849-8c5c-3bd37a31f28c.jpg)
+
+
 * [Features](#features)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
@@ -36,32 +39,9 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 2. User will be required to register and login using a password.
 3. Once the user has registered and logged in to the site, a selection of various Anchor Charts will displayed along with pricing and subject information.
 
-
--HTML & CSS
-
--JavaScript
-
--Bootstrap elements
-
-# Back-end:
-
--Node.js
-
--JavaScript
-
--PostgreSQL database
-
--Express
-
--ES6 Templating
-
--Form validation
-
--CRUD functionality
-
--Bcrypt user authentication & validation
-
 # Server Deployment: Heroku
+
+![heroku](https://user-images.githubusercontent.com/85767134/137340614-3a88b509-52b8-4930-9b78-18700aa4ed29.jpg)
 
 
 # Team Members
@@ -69,6 +49,8 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 Gabriel Lopez
 
 Mike Woolf
+<img width="256" alt="mike" src="https://user-images.githubusercontent.com/85767134/137340678-ec6f4265-5547-429c-884a-9d887f211d48.png">
 
 Teyon Price
+![mypic](https://user-images.githubusercontent.com/85767134/137340701-4e622e82-388c-41f9-98b4-c6325021f2a6.jpg)
 
