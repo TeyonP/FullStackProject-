@@ -41,6 +41,6 @@ Gabriel Lopez
 
 Mike Woolf, <img width="30" alt="mike" src="https://user-images.githubusercontent.com/85767134/137340678-ec6f4265-5547-429c-884a-9d887f211d48.png">
 
-Teyon Price, ![mypic](https://user-images.githubusercontent.com/85767134/137340701-4e622e82-388c-41f9-98b4-c6325021f2a6.jpg alt=MyPic" width="30)
+Teyon Price, ![mypic1](img width="30" https://user-images.githubusercontent.com/85767134/137349104-3ff71d2a-4ea3-42f2-8f4d-da82b0be46f3.png)
 
 
