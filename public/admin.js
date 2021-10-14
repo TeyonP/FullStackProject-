@@ -1,4 +1,4 @@
-const e = require("express");
+// const e = require("express");
 
 const btnAddAnchorChart = document.getElementById("addAnchorBtn");
 const btnUpdateAnchorChart = document.getElementById("updateAnchorBtn");
