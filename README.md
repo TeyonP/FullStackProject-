@@ -23,8 +23,7 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 
 # Back-end:
 
-![node](https://user-images.githubusercontent.com/85767134/137340755-bb3f5b13-d6f0-4ada-82b9-c7d56e9cc4af.jpg), ![postgres](https://user-images.githubusercontent.com/85767134/137340810-9e5d7a98-be73-4849-8c5c-3bd37a31f28c.jpg)
-
+![node](https://user-images.githubusercontent.com/85767134/137340755-bb3f5b13-d6f0-4ada-82b9-c7d56e9cc4af.jpg), ![postgres](https://user-images.githubusercontent.com/85767134/137340810-9e5d7a98-be73-4849-8c5c-3bd37a31f28c.jpg), ![es6](https://user-images.githubusercontent.com/85767134/137342755-9d97ea5d-c334-44fd-85d0-81785a103ca6.jpg)
 
 * [Features](#features)
 * [Screenshots](#screenshots)
@@ -33,7 +32,7 @@ We created a web app that sells anchor charts. An anchor chart is a tool used to
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
+* [Team Members](#team members)
 
 1. We created a landing page that has consist of a registration portal and login portal for viewing different anchor charts. 
 2. User will be required to register and login using a password.
