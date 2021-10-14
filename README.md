@@ -1,6 +1,6 @@
 # Anchor Charts Full Stack Project
 
-![ac2](https://user-images.githubusercontent.com/85767134/137331761-f8705270-f27c-485a-9725-e7390c9b3c37.png)
+![ac2](https://user-images.githubusercontent.com/85767134/137331761-f8705270-f27c-485a-9725-e7390c9b3c37.png), ![ac1](https://user-images.githubusercontent.com/85767134/137333494-5bbcea19-df2e-4110-95d3-06ee8ad7fc0d.jpg)
 
 # Description
 > We created a simple e-commerce website that provides anchor charts. The site allows you to create, update, delete and purchase anchor charts that covers various subjects from grades K-12. An anchor chart is a tool used to support instruction. Anchor charts build a culture of literacy in the classroom by making thinking—both the teacher’s and students’—visible.
