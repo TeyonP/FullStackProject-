@@ -96,7 +96,7 @@
 
       <div class="container" id="login-form">
         <h3>Login</h3>
-        <form class="border m-3">
+        <form class="border m-3" method="GET" action="/auth/google">
           <div class="mb-3 mx-3">
             <label for="userLogin" class="col-sm-2 col-form-label"
               >Username</label
@@ -120,6 +120,14 @@
               id="btn-submit-login"
             >
               Sign in
+            </button>
+
+            <button
+              type="submit"
+              class="btn btn-primary m-3"
+              id="btn-submit-login"
+            >
+              Sign in with Google
             </button>
           </div>
         </form>
