@@ -60,7 +60,6 @@ loginSubmitButton.addEventListener("click", e => {
         el.classList.toggle("hidden");
       }
       if (data.isLoggedIn && data.isAdmin) {
-
         location.replace("https://still-reef-68703.herokuapp.com/admin");
       }
     });
